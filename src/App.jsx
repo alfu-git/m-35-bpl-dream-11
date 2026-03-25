@@ -1,10 +1,15 @@
 import './App.css'
+import NavBar from './Components/NavBar/NavBar'
 
 function App() {
 
   return (
     <>
-      <h1 className='text-3xl font-bold'>Hello</h1>
+      <header>
+        <section className='py-4 container mx-auto px-5'>
+          <NavBar />
+        </section>
+      </header>
     </>
   )
 }

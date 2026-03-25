@@ -1,0 +1,229 @@
+[
+  {
+    "playerName": "Virat Kohli",
+    "playerImg": "https://i.ibb.co.com/F42SjXBJ/Virat-Kohli.webp",
+    "playerType": "Batsman",
+    "playerCountry": "India",
+    "FlagImg": "https://i.ibb.co/Hf0Db8Q8/india-flag.avif",
+    "rating": 791,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm occasional",
+    "price": 18
+  },
+
+  {
+    "playerName": "Joe Root",
+    "playerImg": "https://i.ibb.co.com/1fdytwm0/Joe-Root.webp",
+    "playerType": "Batsman",
+    "playerCountry": "England",
+    "FlagImg": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Flag_of_England.PNG",
+    "rating": 880,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm off break",
+    "price": 10
+  },
+
+  {
+    "playerName": "Jasprit Bumrah",
+    "playerImg": "https://i.ibb.co.com/SXbHxGFJ/bujmrah.webp",
+    "playerType": "Bowler",
+    "playerCountry": "India",
+    "FlagImg": "https://i.ibb.co/Hf0Db8Q8/india-flag.avif",
+    "rating": 879,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm fast",
+    "price": 12
+  },
+
+  {
+    "playerName": "Harry Brook",
+    "playerImg": "https://i.ibb.co.com/WNZQ1gH7/harry-brook.webp",
+    "playerType": "Batsman",
+    "playerCountry": "England",
+    "FlagImg": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Flag_of_England.PNG",
+    "rating": 857,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "None",
+    "price": 6.5
+  },
+
+  {
+    "playerName": "Travis Head",
+    "playerImg": "https://i.ibb.co.com/S7PHjPQy/Travis-Head.webp",
+    "playerType": "Batsman",
+    "playerCountry": "Australia",
+    "FlagImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Flag_of_Australia.svg/3840px-Flag_of_Australia.svg.png",
+    "rating": 853,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Right-arm off break",
+    "price": 7
+  },
+
+  {
+    "playerName": "Steve Smith",
+    "playerImg": "https://i.ibb.co.com/9HBbtrn2/steve-smith.webp",
+    "playerType": "Batsman",
+    "playerCountry": "Australia",
+    "FlagImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Flag_of_Australia.svg/3840px-Flag_of_Australia.svg.png",
+    "rating": 831,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm leg spin",
+    "price": 8
+  },
+
+  {
+    "playerName": "Kane Williamson",
+    "playerImg": "https://i.ibb.co.com/cSGD0gjd/Kane-Williamson.webp",
+    "playerType": "Batsman",
+    "playerCountry": "New Zealand",
+    "FlagImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Flag_of_Australia.svg/1280px-Flag_of_Australia.svg.png?_=20211007161007",
+    "rating": 822,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm off break",
+    "price": 9
+  },
+
+  {
+    "playerName": "Yashasvi Jaiswal",
+    "playerImg": "https://i.ibb.co.com/sJ6wgf0R/Yashasvi-Jaiswal.webp",
+    "playerType": "Batsman",
+    "playerCountry": "India",
+    "FlagImg": "https://i.ibb.co/Hf0Db8Q8/india-flag.avif",
+    "rating": 750,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "None",
+    "price": 4
+  },
+
+  {
+    "playerName": "Shubman Gill",
+    "playerImg": "https://i.ibb.co.com/HD5cpgLs/shubman-gill.avif",
+    "playerType": "Batsman",
+    "playerCountry": "India",
+    "FlagImg": "https://i.ibb.co/Hf0Db8Q8/india-flag.avif",
+    "rating": 730,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "None",
+    "price": 5
+  },
+
+  {
+    "playerName": "Abhishek Sharma",
+    "playerImg": "https://i.ibb.co.com/7t9D4ThV/Abhishek-Sharma.jpg",
+    "playerType": "Batsman",
+    "playerCountry": "India",
+    "FlagImg": "https://i.ibb.co/Hf0Db8Q8/india-flag.avif",
+    "rating": 875,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Left-arm spin",
+    "price": 3
+  },
+
+  {
+    "playerName": "Rashid Khan",
+    "playerImg": "https://i.ibb.co.com/3ykV3h5X/Rashid-Khan.avif",
+    "playerType": "Bowler",
+    "playerCountry": "Afghanistan",
+    "FlagImg": "https://img.freepik.com/premium-vector/vector-afghanistan-flag-afghanistan-flag-illustration-afghanistan-flag-picture-afghanistan-flag-image_731533-1768.jpg?semt=ais_hybrid&w=740&q=80",
+    "rating": 694,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm leg spin",
+    "price": 7.5
+  },
+
+  {
+    "playerName": "Wanindu Hasaranga",
+    "playerImg": "https://i.ibb.co.com/sJqwhg7R/Wanindu-Hasaranga.jpg",
+    "playerType": "Bowler",
+    "playerCountry": "Sri Lanka",
+    "FlagImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Flag_of_Sri_Lanka.svg/1280px-Flag_of_Sri_Lanka.svg.png?_=20231005031750",
+    "rating": 702,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm leg spin",
+    "price": 5.5
+  },
+
+  {
+    "playerName": "Finn Allen",
+    "playerImg": "https://i.ibb.co.com/dJX3NVQz/Finn-Allen.webp",
+    "playerType": "Batsman",
+    "playerCountry": "New Zealand",
+    "FlagImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Flag_of_Australia.svg/1280px-Flag_of_Australia.svg.png?_=20211007161007",
+    "rating": 649,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "None",
+    "price": 2.5
+  },
+
+  {
+    "playerName": "Phil Salt",
+    "playerImg": "https://i.ibb.co.com/1fB99JhP/Phil-Salt.jpg",
+    "playerType": "Batsman",
+    "playerCountry": "England",
+    "FlagImg": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Flag_of_England.PNG",
+    "rating": 792,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "None",
+    "price": 6
+  },
+
+  {
+    "playerName": "Jos Buttler",
+    "playerImg": "https://i.ibb.co.com/qMws2FSj/Jos-Buttler.avif",
+    "playerType": "Batsman/Wicketkeeper",
+    "playerCountry": "England",
+    "FlagImg": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Flag_of_England.PNG",
+    "rating": 716,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "None",
+    "price": 8
+  },
+
+  {
+    "playerName": "Ibrahim Zadran",
+    "playerImg": "https://i.ibb.co.com/PZBx4pkq/Ibrahim-Zadran.webp",
+    "playerType": "Batsman",
+    "playerCountry": "Afghanistan",
+    "FlagImg": "https://img.freepik.com/premium-vector/vector-afghanistan-flag-afghanistan-flag-illustration-afghanistan-flag-picture-afghanistan-flag-image_731533-1768.jpg?semt=ais_hybrid&w=740&q=80",
+    "rating": 678,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "None",
+    "price": 2
+  },
+
+  {
+    "playerName": "Rohit Sharma",
+    "playerImg": "https://i.ibb.co.com/sprL0gRW/Rohit-Sharma.jpg",
+    "playerType": "Batsman",
+    "playerCountry": "India",
+    "FlagImg": "https://i.ibb.co/Hf0Db8Q8/india-flag.avif",
+    "rating": 748,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm off break",
+    "price": 10
+  },
+
+  {
+    "playerName": "Daryl Mitchell",
+    "playerImg": "https://i.ibb.co.com/WNFDhd9v/Daryl-Mitchell.jpg",
+    "playerType": "All-rounder",
+    "playerCountry": "New Zealand",
+    "FlagImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Flag_of_Australia.svg/1280px-Flag_of_Australia.svg.png?_=20211007161007",
+    "rating": 840,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "price": 7
+  },
+  
+  {
+    "playerName": "Shai Hope",
+    "playerImg": "https://i.ibb.co.com/39gSYgLh/Shai-Hope.webp",
+    "playerType": "Batsman",
+    "playerCountry": "West Indies",
+    "FlagImg": "https://img.freepik.com/premium-vector/west-indies-high-quality-flag-clipart-flag-icon-vector-illustration-premium-quality-digital-download_150558-1341.jpg",
+    "rating": 679,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "None",
+    "price": 1.8
+  }
+]

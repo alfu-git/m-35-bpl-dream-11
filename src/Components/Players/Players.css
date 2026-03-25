@@ -1,0 +1,11 @@
+.tab-active {
+  padding: 14px 30px;
+  background-color: #E7FE29;
+  font-weight: bold;
+}
+
+.tab-inactive {
+  padding: 14px 30px;
+  color: #131313;
+  opacity: 60%;
+}

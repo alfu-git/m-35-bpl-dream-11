@@ -37,7 +37,7 @@ const NavBar = () => {
         </ul>
 
         <div>
-          <img width={72} src={NavLogo} alt="Navbar Logo" />
+          <img className="w-10 sm:w-14 md:w-18" src={NavLogo} alt="Navbar Logo" />
         </div>
       </div>
 
@@ -56,12 +56,12 @@ const NavBar = () => {
 
         <div>
           <button className="btn flex gap-2">
-            <span className="flex gap-1 items-center">
-              <span>0</span>
-              <span>Coin</span>
+            <span className="mt-0.5 flex items-center">
+              <span>500</span>
+              <span>M</span>
             </span>
 
-            <img width={20} height={20} src={CoinLogo} alt="Coin Logo" />
+            <img src={CoinLogo} alt="Coin Logo" />
           </button>
         </div>
       </div>

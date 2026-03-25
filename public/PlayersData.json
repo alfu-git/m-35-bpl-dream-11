@@ -213,17 +213,5 @@
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm medium",
     "price": 7
-  },
-  
-  {
-    "playerName": "Shai Hope",
-    "playerImg": "https://i.ibb.co.com/39gSYgLh/Shai-Hope.webp",
-    "playerType": "Batsman",
-    "playerCountry": "West Indies",
-    "FlagImg": "https://img.freepik.com/premium-vector/west-indies-high-quality-flag-clipart-flag-icon-vector-illustration-premium-quality-digital-download_150558-1341.jpg",
-    "rating": 679,
-    "battingStyle": "Left-hand bat",
-    "bowlingStyle": "None",
-    "price": 1.8
   }
 ]

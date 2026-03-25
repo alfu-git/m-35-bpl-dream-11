@@ -5,7 +5,7 @@ import PlayerIcon from '../../../assets/user 1.png';
 const Player = ({player}) => {
   return (
     <div className='border border-[#131313]/10 rounded-2xl p-6'>
-      <div className='mb-6 h-60'>
+      <div className='mb-6 h-60 sm:h-80 md:h-60 lg:h-80 xl:h-60'>
         <img 
           src={player.playerImg} 
           alt={`${player.playerName} Image`} 
@@ -32,8 +32,6 @@ const Player = ({player}) => {
                   'afghanistan-glow' :
                   player.playerCountry === "Sri Lanka" ?
                   'sri-lanka-glow' :
-                  player.playerCountry === "West Indies" ?
-                  'west-indies-glow' :
                   'blue-glow'
                 }
               `}
@@ -51,13 +49,13 @@ const Player = ({player}) => {
 
       <div className='mt-4 mb-3 flex justify-between items-center'>
         <span
-          className={player.playerType === 'Bowler' && 'opacity-70'}
+          className={player.playerType === "Bowler" ? 'opacity-70' : ''}
         >
           {player.battingStyle}
         </span>
 
         <span
-          className={player.playerType === 'Batsman' && 'opacity-70'}
+          className={player.playerType === 'Batsman' ? 'opacity-70' : ''}
         >
           {player.bowlingStyle !== "None" && player.bowlingStyle}
         </span>

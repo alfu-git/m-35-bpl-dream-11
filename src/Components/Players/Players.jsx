@@ -18,9 +18,8 @@ const Players = ({ playersPromise, dollar, setDollar }) => {
 
     if (!isExists) {
       setSelectedPlayers([...selectedPlayers, player]);
+      setDollar(dollar - player.price);
     }
-
-    setDollar(dollar - player.price);
 
     toast(
       <p className="space-x-1">
@@ -79,7 +78,11 @@ const Players = ({ playersPromise, dollar, setDollar }) => {
         {status ? (
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
             {playersData.map((player, index) => (
-              <Player key={index} player={player} getPlayer={getPlayer} />
+              <Player 
+                key={index} 
+                player={player} 
+                getPlayer={getPlayer}
+              />
             ))}
           </div>
         ) : (
@@ -93,7 +96,12 @@ const Players = ({ playersPromise, dollar, setDollar }) => {
             }
 
             <div className="space-y-6">
-              <SelectedPlayer selectedPlayers= {selectedPlayers} />
+              <SelectedPlayer 
+                selectedPlayers= {selectedPlayers} 
+                setSelectedPlayers={setSelectedPlayers} 
+                dollar={dollar}
+                setDollar={setDollar}
+              />
             </div>
           </div>
         )}

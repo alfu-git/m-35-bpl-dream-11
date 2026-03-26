@@ -1,8 +1,12 @@
 import { Trash2 } from "lucide-react";
 import React from "react";
 
-const SelectedPlayer = ({ selectedPlayers }) => {
-  console.log(selectedPlayers);
+const SelectedPlayer = ({ selectedPlayers, setSelectedPlayers, dollar, setDollar }) => {
+  const removePlayer = (player) => {
+    const removeP = selectedPlayers.filter(p => p.playerName !== player.playerName);
+    setSelectedPlayers(removeP);
+    setDollar(dollar + player.price);
+  }
 
   return selectedPlayers.map((player) => (
     <div key={player.playerName} className="p-4 border border-[#131313]/10 rounded-2xl flex justify-between items-center">
@@ -27,7 +31,10 @@ const SelectedPlayer = ({ selectedPlayers }) => {
       </div>
 
       <div className="mr-5">
-        <button className="btn w-14 h-14 rounded-full">
+        <button 
+          onClick={() => removePlayer(player)}
+          className="btn w-14 h-14 rounded-full"
+        >
           <Trash2 className="text-[#F14749]" />
         </button>
       </div>

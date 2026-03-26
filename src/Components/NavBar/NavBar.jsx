@@ -54,15 +54,15 @@ const NavBar = ({dollar}) => {
           </ul>
         </div>
 
-        <div>
-          <button className="btn flex gap-2">
-            <span className="mt-0.5 flex items-center">
+        <div className="py-4 px-5 bg-base-100 border border-[#131313]/10 rounded-2xl flex gap-2">
+            <span className="flex items-center font-bold">
               <span>{dollar}</span>
               <span>M</span>
             </span>
 
-            <img src={CoinLogo} alt="Coin Logo" />
-          </button>
+            <div>
+              <img src={CoinLogo} alt="Coin Logo" />
+            </div>
         </div>
       </div>
     </div>

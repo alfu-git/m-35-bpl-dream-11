@@ -1,4 +1,5 @@
 import { Suspense, useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';
 import "./App.css";
 import Banner from "./Components/Banner/Banner";
 import NavBar from "./Components/NavBar/NavBar";
@@ -15,7 +16,7 @@ function App() {
 
   return (
     <>
-      <header className=" sticky top-0 z-50 bg-base-100">
+      <header>
         <section className="mb-6 py-1 md:py-4 container mx-auto px-5 border-b border-[#131313]/20">
           <NavBar dollar={dollar} />
         </section>
@@ -38,6 +39,8 @@ function App() {
           </Suspense>
         </section>
       </main>
+
+      <ToastContainer />
     </>
   );
 }

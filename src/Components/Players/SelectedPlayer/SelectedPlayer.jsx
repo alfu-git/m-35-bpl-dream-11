@@ -1,26 +1,39 @@
 import { Trash2 } from "lucide-react";
 import React from "react";
+import { toast } from "react-toastify";
+import './SelectedPlayer.css';
 
 const SelectedPlayer = ({ selectedPlayers, setSelectedPlayers, dollar, setDollar }) => {
+
   const removePlayer = (player) => {
     const removeP = selectedPlayers.filter(p => p.playerName !== player.playerName);
     setSelectedPlayers(removeP);
     setDollar(dollar + player.price);
+
+    toast.error(
+          <p className="space-x-1 text-sm sm:text-base">
+            <span className="font-semibold">
+              {player.playerName}
+            </span>
+            <span>is</span>
+            <span className="text-red-600 font-bold">removed</span>
+          </p>
+        );
   }
 
   return selectedPlayers.map((player) => (
-    <div key={player.playerName} className="p-4 border border-[#131313]/10 rounded-2xl flex justify-between items-center">
-      <div className="flex items-center gap-6">
+    <div key={player.playerName} className="p-3 md:p-4 rounded-2xl flex justify-between sm:items-center card-shadow">
+      <div className="flex flex-col sm:flex-row items-center gap-3 md:gap-6">
         <div>
-          <img className="w-40 h-30 object-cover rounded-2xl" src={player.playerImg} />
+          <img className="w-30 h-30 md:w-40 md:h-40 object-cover rounded-2xl" src={player.playerImg} />
         </div>
 
         <div>
-          <h3 className="mb-3 text-2xl font-bold">{player.playerName}</h3>
+          <h3 className="md:mb-3 text-xl md:text-2xl font-bold">{player.playerName}</h3>
 
-          <span className="block mb-1 text-lg font-semibold">{player.playerType}</span>
+          <span className="block md:mb-1 md:text-lg font-semibold">{player.playerType}</span>
 
-          <span className="opacity-60">
+          <span className="text-sm md:text-base opacity-60">
             {player.playerType === "Batsman"
               ? player.battingStyle
               : player.playerType !== 'None' && player.playerType === "Bowler"
@@ -33,7 +46,7 @@ const SelectedPlayer = ({ selectedPlayers, setSelectedPlayers, dollar, setDollar
       <div className="mr-5">
         <button 
           onClick={() => removePlayer(player)}
-          className="btn w-14 h-14 rounded-full"
+          className="btn p-0 w-10 h-10 md:w-14 md:h-14 rounded-full"
         >
           <Trash2 className="text-[#F14749]" />
         </button>

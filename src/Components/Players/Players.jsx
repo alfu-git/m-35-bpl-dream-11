@@ -1,6 +1,5 @@
 import React, { use, useState } from "react";
-import { ToastContainer, toast } from 'react-toastify';
-import "./players.css";
+import { toast } from "react-toastify";
 import Player from "./Player/Player";
 import EmptyContent from "./EmptyContent/EmptyContent";
 import SelectedPlayer from "./SelectedPlayer/SelectedPlayer";
@@ -22,24 +21,24 @@ const Players = ({ playersPromise, dollar, setDollar }) => {
     }
 
     toast(
-      <p className="space-x-1">
+      <p className="space-x-1 text-sm sm:text-base">
         <span className="text-fuchsia-600 font-bold">
           {player.playerName}
         </span>
         <span>is selected successfully</span>
       </p>
-    );
+    )
   }
 
 
   return (
     <div>
-      <div className="mb-8 flex justify-between items-center">
-        <div>
+      <div className="mb-8 flex flex-col md:flex-row gap-3 justify-between items-start lg:items-center">
+        <div className="sticky top-0 z-50">
           {status ? (
-            <h2 className="text-[28px] font-bold">Available Players</h2>
+            <h2 className="text-xl sm:text-[28px] font-bold">Available Players</h2>
           ) : (
-            <h2 className="text-[28px] font-bold">
+            <h2 className="text-xl sm:text-[28px] font-bold">
               Selected Player
               <span>
                 (<span>{selectedPlayers.length}</span>
@@ -82,6 +81,7 @@ const Players = ({ playersPromise, dollar, setDollar }) => {
                 key={index} 
                 player={player} 
                 getPlayer={getPlayer}
+                selectedPlayers= {selectedPlayers}
               />
             ))}
           </div>
@@ -95,7 +95,7 @@ const Players = ({ playersPromise, dollar, setDollar }) => {
               )
             }
 
-            <div className="space-y-6">
+            <div className="mb-10 space-y-6">
               <SelectedPlayer 
                 selectedPlayers= {selectedPlayers} 
                 setSelectedPlayers={setSelectedPlayers} 
@@ -107,7 +107,7 @@ const Players = ({ playersPromise, dollar, setDollar }) => {
         )}
       </div>
 
-      <ToastContainer />
+      
     </div>
   );
 };

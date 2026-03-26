@@ -9,7 +9,7 @@ const Banner = () => {
         backgroundColor: "#131313",
         backgroundImage: `url(${BannerBg})`,
       }}
-      className="px-2 sm:px-0 md:px-10 lg:px-3 xl:px-0 py-16  bg-cover bg-no-repeat rounded-3xl"
+      className="px-2 sm:px-0 md:px-10 lg:px-3 xl:px-0 py-16 bg-cover bg-no-repeat rounded-3xl"
     >
       <div className="flex flex-col items-center">
         <div className="mb-6">

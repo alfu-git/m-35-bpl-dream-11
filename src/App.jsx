@@ -4,6 +4,7 @@ import "./App.css";
 import Banner from "./Components/Banner/Banner";
 import NavBar from "./Components/NavBar/NavBar";
 import Players from "./Components/Players/Players";
+import Subscribe from "./Components/Subscribe/Subscribe";
 
 const fetchPlayers = async () => {
   const res = await fetch("/PlayersData.json");
@@ -27,7 +28,7 @@ function App() {
           <Banner />
         </section>
 
-        <section className="container mx-auto px-5">
+        <section className="mb-25 container mx-auto px-5">
           <Suspense
             fallback={
               <div className="mt-20 flex justify-center">
@@ -37,6 +38,10 @@ function App() {
           >
             <Players playersPromise={playersPromise} dollar={dollar} setDollar={setDollar} />
           </Suspense>
+        </section>
+
+        <section className="container mx-auto px-5">
+          <Subscribe />
         </section>
       </main>
 

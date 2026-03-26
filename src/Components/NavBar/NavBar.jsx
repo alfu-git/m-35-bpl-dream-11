@@ -5,7 +5,7 @@ import { Menu, X } from "lucide-react";
 
 const navItems = ["Home", "Fixture", "Teams", "Schedules"];
 
-const NavBar = () => {
+const NavBar = ({dollar}) => {
   const [status, setStatus] = useState(false);
 
   const handleMenu = () => {
@@ -57,7 +57,7 @@ const NavBar = () => {
         <div>
           <button className="btn flex gap-2">
             <span className="mt-0.5 flex items-center">
-              <span>500</span>
+              <span>{dollar}</span>
               <span>M</span>
             </span>
 

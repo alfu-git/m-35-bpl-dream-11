@@ -1,12 +1,37 @@
 import React, { use, useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';
 import "./players.css";
 import Player from "./Player/Player";
 import EmptyContent from "./EmptyContent/EmptyContent";
+import SelectedPlayer from "./SelectedPlayer/SelectedPlayer";
 
-const Players = ({ playersPromise }) => {
+const Players = ({ playersPromise, dollar, setDollar }) => {
+
   const playersData = use(playersPromise);
 
   const [status, setStatus] = useState(true);
+  const [selectedPlayers, setSelectedPlayers] = useState([]);
+
+  const getPlayer = (player) => {
+
+    const isExists = selectedPlayers.find(p => p.playerName === player.playerName);
+
+    if (!isExists) {
+      setSelectedPlayers([...selectedPlayers, player]);
+    }
+
+    setDollar(dollar - player.price);
+
+    toast(
+      <p className="space-x-1">
+        <span className="text-fuchsia-600 font-bold">
+          {player.playerName}
+        </span>
+        <span>is selected successfully</span>
+      </p>
+    );
+  }
+
 
   return (
     <div>
@@ -18,7 +43,7 @@ const Players = ({ playersPromise }) => {
             <h2 className="text-[28px] font-bold">
               Selected Player
               <span>
-                (<span>0</span>
+                (<span>{selectedPlayers.length}</span>
                 <span>/</span>
                 <span>{playersData.length}</span>)
               </span>
@@ -44,7 +69,7 @@ const Players = ({ playersPromise }) => {
           >
             Selected
             <span>
-              (<span>0</span>)
+              (<span>{selectedPlayers.length}</span>)
             </span>
           </button>
         </div>
@@ -54,21 +79,27 @@ const Players = ({ playersPromise }) => {
         {status ? (
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
             {playersData.map((player, index) => (
-              <Player key={index} player={player} />
+              <Player key={index} player={player} getPlayer={getPlayer} />
             ))}
           </div>
         ) : (
           <div>
-            <div>
-              <EmptyContent />
-            </div>
+            {
+              selectedPlayers.length === 0 && (
+                <div>
+                  <EmptyContent />
+                </div>
+              )
+            }
 
-            <div>
-              
+            <div className="space-y-6">
+              <SelectedPlayer selectedPlayers= {selectedPlayers} />
             </div>
           </div>
         )}
       </div>
+
+      <ToastContainer />
     </div>
   );
 };

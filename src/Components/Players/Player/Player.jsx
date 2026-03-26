@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Player.css'
 import PlayerIcon from '../../../assets/user 1.png';
 
-const Player = ({player}) => {
+const Player = ({player, getPlayer}) => {
+
+  const [status, setStatus] = useState(true);
+
+  const handleChooseBtn = () => {
+    setStatus(!status);
+    getPlayer(player);
+  }
+
   return (
     <div className='border border-[#131313]/10 rounded-2xl p-6'>
       <div className='mb-6 h-60 sm:h-80 md:h-60 lg:h-80 xl:h-60'>
@@ -65,8 +73,15 @@ const Player = ({player}) => {
         <span className='font-semibold'>
           Price: ${player.price}M
         </span>
-        <button className='btn text-sm'>
-          Choose Player
+        <button 
+          onClick={handleChooseBtn}
+          disabled={!status}
+          className="btn"
+        >
+          {
+            status ? 'Choose Player' : 'Selected'
+          }
+          
         </button>
       </div>
     </div>
